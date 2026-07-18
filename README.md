@@ -1,6 +1,10 @@
-# GC-MS-phytochemical_downloader-
+# GC-MS-phytochemical_Scraper
+
+The GC-MS → PubChem Pipeline is a Python command-line tool that automates the annotation of Gas Chromatography–Mass Spectrometry (GC-MS) reports by enriching identified compounds with structural and chemical information from PubChem. Instead of manually searching each compound, the pipeline converts raw GC-MS output into a structured, analysis-ready dataset suitable for computational chemistry and bioinformatics workflows.
+
 This pipeline parses GC-MS PDF reports to extract compound names, retention times, CAS numbers, and molecular formulas. It then resolves each compound to its corresponding PubChem Compound ID (CID) using name-based searches with CAS number fallback. The pipeline retrieves the canonical SMILES representation and downloads 3D SDF structures
-# GC-MS → Phytochemical_downloader
+
+# GC-MS → Phytochemical Detail Scraper 
 
 An pipeline that takes a GC-MS (Gas Chromatography–Mass Spectrometry) report in PDF form, extracts every identified compound, and automatically enriches each one with structural data from PubChem.
 
