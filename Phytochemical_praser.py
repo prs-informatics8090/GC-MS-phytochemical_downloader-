@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GC-MS REPORT → Phytochemical_Downloader  
+GC-MS REPORT → Phytochemical_scraper  
 =================================
 1. Extracts compound names & CAS numbers from a GC-MS PDF report.
 2. Resolves each compound to a PubChem CID.
@@ -10,8 +10,8 @@ GC-MS REPORT → Phytochemical_Downloader
 
 Usage
 -----
-    python phytochemical_praser.py  path/to/report.pdf
-    python phytochemical_praser.py  path/to/report.pdf  -o results_folder  -d 0.3
+    python phytochemical_scraper.py  path/to/report.pdf
+    python phytochemical_scraper.py  path/to/report.pdf  -o results_folder  -d 0.3
 
 Requirements
 ------------
@@ -56,7 +56,7 @@ HEADERS = {
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _get(url, retries=3, backoff=2.0):
-    """Robust GET with retry on 429 / 5xx."""
+    """Get and retry on 429 / 5xx."""
     for attempt in range(1, retries + 1):
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
