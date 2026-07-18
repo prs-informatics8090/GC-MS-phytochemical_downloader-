@@ -28,12 +28,12 @@ Requires Python 3.8+.
 Usage
 
 ```bash
-python pubchem_scraper.py path/to/report.pdf
+python phytochemical_praser.py path/to/report.pdf
 ```
 Optional arguments:
 
 ```bash
-python pubchem_scraper.py path/to/report.pdf -o results_folder -d 0.3
+python phytochemical_praser.py path/to/report.pdf -o results_folder -d 0.3
 ```
 
 | Flag | Description | Default |
