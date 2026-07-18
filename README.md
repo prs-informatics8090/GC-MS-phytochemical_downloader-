@@ -68,3 +68,6 @@ License
 
 MIT — see [LICENSE](LICENSE).
 
+It is my pleasure to contribute this script to the scientific community.  
+Developed by Paras Dhiman (B.tech Graduate 2026)
+
